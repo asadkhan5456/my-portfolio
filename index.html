@@ -17,20 +17,19 @@
       <a href="#achievements">Achievements & Certifications</a>
       <a href="#resume">Resume</a>
       <a href="#contact">Contact</a>
-
       <!-- Link to German version -->
       <a href="de/index.html" class="lang-switch">Deutsch</a>
     </nav>
   </header>
 
-  <!-- HERO / INTRO SECTION -->
+  <!-- ABOUT SECTION -->
   <section id="about" class="section">
     <div class="content">
       <img class="profile-img" src="assets/images/profile.jpg" alt="Asad Khan"/>
       <h1>Hi, I'm Asad Khan</h1>
       <p>
-        Experienced AI Engineer / Data Scientist / ML Engineer with 4+ years...
-        (A short professional intro in English)
+        Experienced AI Engineer / Data Scientist / ML Engineer with 4+ years of experience in
+        machine learning, NLP, analytics, and more.
       </p>
     </div>
   </section>
@@ -40,39 +39,35 @@
     <h2>Skills</h2>
     <ul>
       <li>Python, SQL, HTML, CSS, MATLAB</li>
-      <li>Data Analysis: Pandas, NumPy, Scikit-Learn, etc.</li>
-      <li>Machine Learning & AI: NLP, LLMs, PyTorch, TensorFlow</li>
-      <li>Cloud & MLOps: Docker, Kubernetes, Azure, GitHub Actions</li>
-      <!-- ... -->
+      <li>Data Science: Pandas, NumPy, Scikit-Learn, etc.</li>
+      <li>Machine Learning & AI: NLP, PyTorch, TensorFlow, LLMs</li>
+      <li>Data Visualization: Matplotlib, Seaborn, Power BI, Grafana</li>
+      <li>MLOps & Cloud: Docker, Kubernetes, Azure, GitHub Actions</li>
     </ul>
   </section>
 
   <!-- PROJECTS SECTION -->
   <section id="projects" class="section">
     <h2>Projects</h2>
-    <!-- Example project 1 -->
+
     <div class="project-card">
       <h3>Property Price Prediction</h3>
-      <p>
-        A model using GridSearchCV to accurately predict real-estate prices...
-      </p>
+      <p>A model using GridSearchCV to predict real-estate prices.</p>
       <a href="https://github.com/asadkhan5456/Property-Price-Prediction-Model" target="_blank">
         View on GitHub
       </a>
     </div>
 
-    <!-- Example project 2 -->
     <div class="project-card">
       <h3>Credit Card Fraud Detection</h3>
-      <p>
-        A classification model to detect fraudulent transactions...
-      </p>
+      <p>A classification model to detect fraudulent credit card transactions.</p>
       <a href="https://github.com/asadkhan5456/Credit-Card-Fraud-Detection" target="_blank">
         View on GitHub
       </a>
     </div>
-
+    
     <!-- Add more projects similarly -->
+
   </section>
 
   <!-- ACHIEVEMENTS & CERTIFICATIONS SECTION -->
@@ -82,7 +77,7 @@
       <li>IBM: Data Analysis with Python</li>
       <li>Coursera: Introduction to Data Science with Python</li>
       <li>Coursera: Python Data Structure</li>
-      <!-- Possibly link your PDF certificates as previews or icons -->
+      <!-- If you want to show PDF previews, link them here with an <a> or a button -->
     </ul>
   </section>
 
@@ -90,21 +85,25 @@
   <section id="resume" class="section">
     <h2>Resume</h2>
     <p>You can preview and download my latest Resume here:</p>
-    <a href="assets/pdf/Asad_Resume_EN.pdf" target="_blank">Preview Resume</a>
+    <a href="assets/pdf/Asad_Resume_EN.pdf" target="_blank">Preview / Download Resume (English)</a>
   </section>
 
   <!-- CONTACT SECTION -->
   <section id="contact" class="section">
     <h2>Contact</h2>
-    <form action="https://formspree.io/f/your-formspree-id" method="POST">
+    <!-- Replace the action URL with your actual Formspree endpoint -->
+    <form action="https://formspree.io/f/xwplrvye" method="POST">
       <label for="name">Name *</label>
       <input type="text" id="name" name="name" required />
 
       <label for="email">Email *</label>
-      <input type="email" id="email" name="email" required />
+      <input type="email" id="email" name="_replyto" required />
 
       <label for="message">Message *</label>
       <textarea id="message" name="message" rows="5" required></textarea>
+
+      <!-- Optional hidden input to specify language or other metadata -->
+      <!-- <input type="hidden" name="_language" value="en" /> -->
 
       <button type="submit">Send</button>
     </form>
