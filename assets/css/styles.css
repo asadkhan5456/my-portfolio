@@ -11,7 +11,11 @@
   --bg-color: #fff;
   --text-color: #333;
   --accent-color: #d23669; /* Pinkish accent similar to Maggie’s */
-  --font-stack: "Helvetica Neue", Arial, sans-serif;
+   @import url('https://fonts.googleapis.com/css2?family=Muli:wght@300;400;700&display=swap');
+:root {
+  --font-stack: 'Muli', sans-serif;
+}
+
   --max-width: 800px;
 }
 
