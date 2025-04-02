@@ -9,18 +9,23 @@
 <body>
 
   <!-- HEADER / NAVBAR -->
-  <header>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#achievements">Achievements & Certifications</a>
-      <a href="#resume">Resume</a>
-      <a href="#contact">Contact</a>
-      <!-- Link to German version -->
-      <a href="de/index.html" class="lang-switch">Deutsch</a>
-    </nav>
-  </header>
+<!-- Updated Header with Sticky & Minimal Style -->
+<header id="header">
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">Asad Khan</a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="de/index.html" class="lang-switch">Deutsch</a></li>
+    </ul>
+  </nav>
+</header>
 
   <!-- ABOUT SECTION -->
   <section id="about" class="section">
@@ -117,6 +122,18 @@
       <a href="https://www.linkedin.com/in/ak54/" target="_blank">LinkedIn</a>
     </div>
   </footer>
+<!-- Place before closing body tag -->
+<script>
+  // Example: Change header background on scroll
+  window.addEventListener('scroll', function() {
+    const header = document.getElementById('header');
+    if(window.scrollY > 50) {
+      header.style.background = "rgba(255, 255, 255, 0.95)";
+    } else {
+      header.style.background = "rgba(255, 255, 255, 0.9)";
+    }
+  });
+</script>
 
 </body>
 </html>
