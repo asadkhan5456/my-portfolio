@@ -1,101 +1,226 @@
-/* Basic Reset & Fonts */
-body, h1, h2, h3, p, ul {
-  margin: 0;
-  padding: 0;
-}
-body {
-  font-family: 'Helvetica Neue', sans-serif;
-  line-height: 1.6;
-  background-color: #fff;
-  color: #333;
-  scroll-behavior: smooth; /* Enables smooth scrolling */
+/* style.css */
+
+:root {
+  /* Accent color - tweak as desired (Maggie uses pinkish accent, here is a mild pink) */
+  --accent-color: #d23669;
+  --text-color: #333;
+  --bg-color: #fff;
+  --sidebar-width: 220px;
+  --font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
-/* Sticky Header */
-#header {
+* {
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* LEFT SIDEBAR NAV */
+.sidebar {
   position: fixed;
-  width: 100%;
   top: 0;
   left: 0;
-  background: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  z-index: 1000;
-  transition: background 0.3s ease;
-}
-.navbar {
+  width: var(--sidebar-width);
+  height: 100vh;
+  background-color: #f7f7f7;
+  border-right: 1px solid #ddd;
+  padding: 2rem 1rem;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
 }
+
+.logo h2 {
+  color: var(--accent-color);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
 .nav-links {
   list-style: none;
-  display: flex;
-  gap: 1.5rem;
+  margin-bottom: 2rem;
 }
+
+.nav-links li {
+  margin: 0.5rem 0;
+}
+
 .nav-links li a {
   text-decoration: none;
-  color: #333;
+  color: var(--text-color);
   font-weight: 500;
-  transition: color 0.3s ease;
+  transition: color 0.3s;
 }
 .nav-links li a:hover {
-  color: #007acc;
+  color: var(--accent-color);
 }
 
-/* Hero Section */
-.section#about {
-  min-height: 100vh;
-  background: url('../assets/images/hero-background.jpg') center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #fff;
-  position: relative;
+.social a {
+  display: inline-block;
+  margin-right: 1rem;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: color 0.3s;
 }
-.section#about::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.5); /* Dark overlay */
+.social a:hover {
+  color: var(--accent-color);
 }
 
-/* Content Animation (using AOS or custom classes) */
-[data-aos] {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-[data-aos].aos-animate {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Projects Grid */
-.section#projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+/* MAIN CONTENT WRAPPER */
+.main-content {
+  margin-left: var(--sidebar-width);
   padding: 2rem;
+}
+
+/* SECTIONS */
+.section {
+  padding: 3rem 0;
+  border-bottom: 1px solid #eee;
+}
+.section:last-child {
+  border-bottom: none;
+}
+.section h1, .section h2 {
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+}
+.section p {
+  margin-bottom: 1rem;
+  max-width: 700px;
+}
+
+/* PROFILE IMAGE */
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 1rem auto;
+}
+
+/* EXPERIENCE TIMELINE */
+.timeline .job {
+  margin-bottom: 2rem;
+}
+.job-title {
+  font-weight: bold;
+  display: block;
+  color: var(--accent-color);
+}
+.job-dates {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  color: #777;
+}
+
+/* PROJECTS GRID */
+.projects-grid {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 }
 .project-card {
   border: 1px solid #ddd;
   padding: 1rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 .project-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
+.project-card h3 {
+  margin-bottom: 0.5rem;
+  color: var(--accent-color);
+}
+.project-card p {
+  margin-bottom: 1rem;
+}
 
-/* Footer */
+/* CERTIFICATIONS */
+.cert-list {
+  list-style: disc;
+  margin-left: 2rem;
+  max-width: 700px;
+}
+
+/* FORM */
+form {
+  max-width: 500px;
+}
+form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+form input, form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+form button {
+  margin-top: 1rem;
+  background-color: var(--accent-color);
+  color: #fff;
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+form button:hover {
+  opacity: 0.9;
+}
+
+/* FOOTER */
 footer {
-  background: #f8f8f8;
   text-align: center;
-  padding: 1.5rem;
+  margin-top: 2rem;
+  padding: 1rem 0;
   font-size: 0.9rem;
+  color: #666;
+}
+
+/* RESPONSIVE (BASIC EXAMPLE) */
+@media(max-width: 800px) {
+  .sidebar {
+    width: 180px;
+    padding: 1rem;
+  }
+  .main-content {
+    margin-left: 180px;
+    padding: 1rem;
+  }
+}
+@media(max-width: 600px) {
+  .sidebar {
+    position: static;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .nav-links li {
+    margin: 0.5rem;
+  }
+  .main-content {
+    margin-left: 0;
+    padding: 1rem;
+  }
 }
