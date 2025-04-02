@@ -1,169 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Asad Khan - Portfolio</title>
-  <!-- Link to your external CSS -->
+  <title>Asad Khan - About</title>
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
 
-  <!-- LEFT SIDEBAR NAV -->
-  <nav class="sidebar">
-    <div class="logo">
-      <!-- Your Name or Logo -->
-      <h2>Asad Khan</h2>
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="nav-left">
+      <a href="index.html" class="site-title">Asad Khan</a>
     </div>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#achievements">Certifications</a></li>
-      <li><a href="#resume">Resume</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <!-- Language Switch (if you have a German version) -->
-      <!-- <li><a href="de/index.html">Deutsch</a></li> -->
-    </ul>
-    <div class="social">
-      <a href="https://github.com/asadkhan5456" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/ak54/" target="_blank">LinkedIn</a>
+    <div class="nav-right">
+      <ul>
+        <li><a href="index.html">About</a></li>
+        <li><a href="portfolio/">Portfolio</a></li>
+        <li><a href="resume/">Resume</a></li>
+        <!-- Add more links if needed -->
+      </ul>
     </div>
   </nav>
 
-  <!-- MAIN CONTENT WRAPPER -->
-  <div class="main-content">
-
-    <!-- ABOUT SECTION -->
-    <section id="about" class="section">
-      <h1>Hi, I'm Asad Khan</h1>
+  <!-- MAIN CONTENT -->
+  <div class="container">
+    <section class="about-section">
+      <h1>About Me</h1>
       <img src="assets/images/profile.jpg" alt="Asad Khan" class="profile-pic" />
       <p>
-        I am an AI Engineer / Data Scientist / Machine Learning Engineer with 4+ years of experience in 
-        data analysis, MLOps, real-time data processing, recommender systems, and conversational AI.
+        I'm an AI Engineer / Data Scientist / Machine Learning Engineer with 4+ years of experience
+        in data analysis, MLOps, real-time data processing, and conversational AI.
       </p>
       <p>
-        Passionate about designing scalable ML architectures and integrating CI/CD pipelines 
-        to deliver business value in production environments.
+        My passion lies in designing scalable ML architectures, integrating CI/CD pipelines,
+        and leveraging data-driven insights to optimize industrial processes and business decisions.
+      </p>
+      <p>
+        Contact me on <a href="https://www.linkedin.com/in/ak54/" target="_blank">LinkedIn</a> or 
+        check out my work on <a href="https://github.com/asadkhan5456" target="_blank">GitHub</a>.
       </p>
     </section>
+  </div>
 
-    <!-- EXPERIENCE SECTION -->
-    <section id="experience" class="section">
-      <h2>Experience</h2>
-      <div class="timeline">
-        <div class="job">
-          <h3>Albert Handtmann Maschinenfabrik GmbH & Co. KG</h3>
-          <span class="job-title">Development Engineer (AI / ML / Data Scientist / Data Analyst)</span>
-          <span class="job-dates">Jun 2023 – Present</span>
-          <p>
-            - Built MLOps infrastructure (CI/CD, Docker, Kubernetes) for model deployment.<br/>
-            - Developed AI chatbots with Azure OpenAI GPT models to analyze machine data in real time.<br/>
-            - Integrated dashboards (Grafana, Power BI) for real-time KPI monitoring & anomaly detection.
-          </p>
-        </div>
-
-        <div class="job">
-          <h3>Albert Handtmann</h3>
-          <span class="job-title">Master Thesis – AI-based Process Monitoring</span>
-          <span class="job-dates">Nov 2022 – May 2023</span>
-          <p>
-            - Created an AI-driven system achieving 95% accuracy for filling machine weight measurement.<br/>
-            - Deployed ML solutions via Kubernetes & Docker with automated CI/CD.<br/>
-            - Utilized InfluxDB & Grafana for real-time KPI visualization.
-          </p>
-        </div>
-
-        <div class="job">
-          <h3>Keysight Technologies GmbH</h3>
-          <span class="job-title">Intern – Data Scientist</span>
-          <span class="job-dates">Mar 2022 – Jul 2022</span>
-          <p>
-            - Developed an NLP-based tool for YouTube data analysis, improving marketing insights by 20%.<br/>
-            - Built automated ML pipelines for large-scale data processing and feature engineering.<br/>
-            - Delivered regression models & dashboards for data-driven decision-making.
-          </p>
-        </div>
-
-        <div class="job">
-          <h3>Magnificent Data GmbH</h3>
-          <span class="job-title">Intern – Data Analyst (NLP)</span>
-          <span class="job-dates">Oct 2021 – Jan 2022</span>
-          <p>
-            - Created conversational AI chatbots with transformer models (BERT, NLTK, spaCy).<br/>
-            - Automated data extraction & preprocessing to increase analysis efficiency.<br/>
-            - Performed sentiment analysis & market insights reporting for stakeholders.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS SECTION -->
-    <section id="projects" class="section">
-      <h2>Projects</h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <h3>Property Price Prediction</h3>
-          <p>Used GridSearchCV for accurate real-estate price predictions.</p>
-          <a href="https://github.com/asadkhan5456/Property-Price-Prediction-Model" target="_blank">GitHub</a>
-        </div>
-        <div class="project-card">
-          <h3>Credit Card Fraud Detection</h3>
-          <p>A classification model to detect fraudulent credit card transactions.</p>
-          <a href="https://github.com/asadkhan5456/Credit-Card-Fraud-Detection" target="_blank">GitHub</a>
-        </div>
-        <div class="project-card">
-          <h3>Olympics Data Analysis</h3>
-          <p>Performed EDA & visualization on historical Olympics data.</p>
-          <a href="https://github.com/asadkhan5456/Olympics-Game-Data-Analysis" target="_blank">GitHub</a>
-        </div>
-        <!-- Add more projects as needed -->
-      </div>
-    </section>
-
-    <!-- CERTIFICATIONS SECTION -->
-    <section id="achievements" class="section">
-      <h2>Certifications</h2>
-      <ul class="cert-list">
-        <li>IBM: Data Analysis with Python</li>
-        <li>Coursera: Introduction to Data Science with Python</li>
-        <li>Coursera: Python Data Structure</li>
-      </ul>
-    </section>
-
-    <!-- RESUME SECTION -->
-    <section id="resume" class="section">
-      <h2>Resume</h2>
-      <p>Preview and download my latest resumes:</p>
-      <a href="assets/pdf/Asad_Resume_EN.pdf" target="_blank">English (PDF)</a><br/>
-      <a href="assets/pdf/Asad_Resume_DE.pdf" target="_blank">German (PDF)</a>
-    </section>
-
-    <!-- CONTACT SECTION -->
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      <form action="https://formspree.io/f/xwplrvye" method="POST">
-        <label for="name">Name *</label>
-        <input type="text" id="name" name="name" required />
-
-        <label for="email">Email *</label>
-        <input type="email" id="email" name="_replyto" required />
-
-        <label for="message">Message *</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-
-        <button type="submit">Send</button>
-      </form>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-      <p>&copy; 2025 Asad Khan. All Rights Reserved.</p>
-    </footer>
-
-  </div> <!-- end main-content -->
-
-  <!-- Optionally add minimal JS for enhancements, e.g., toggling a mobile nav -->
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Asad Khan. All Rights Reserved.</p>
+  </footer>
 
 </body>
 </html>
